@@ -5,7 +5,7 @@ http://www.sxmwr.gov.cn/gb-zxfw-news-3-list-79501 中，list后数字并非序�
 详细步骤参考：
 http://www.jianshu.com/p/eacde7b9cce2
 以下分4步完成：
-###1、获取每一天的公报链接（index.py)
+###1、获取每一天的公报链接（index.py)###
 对于新手来说，感觉还是beautifulSoup抓取页面比较好用。（具体用法自行百度）
 print结果如下
 ```    
@@ -13,14 +13,14 @@ gb-zxfw-news-3-list-62331
 gb-zxfw-news-3-list-62314
 ……
 ```
-###2、用excel处理上一步结果
+###2、用excel处理上一步结果###
 由于下一步需要一个list，形如['a','b']，于是将上一步运行结果，通过复制转置为一行，在下一行插入公式(假设第一行第一列为A1，此公式是为上一行每一个数据加上引号）
 ```
 ="'"%A1%"'"
 ```
 然后另存为带逗号的csv格式，可以用记事本打开复制到下一个python程序中。
-###3、存储每一天的公报为xls格式(content.py)
-###4、合并所有xls为多sheet表格
+###3、存储每一天的公报为xls格式(content.py)###
+###4、合并所有xls为多sheet表格###
 在网上直接扒了一个vba代码：
 ```
 Sub CombineWorkbooks()
